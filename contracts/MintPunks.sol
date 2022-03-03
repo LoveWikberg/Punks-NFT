@@ -13,7 +13,7 @@ contract MintPunks is ERC721A {
     string private baseTokenUri;
 
     constructor() ERC721A("Wagmi Punks", "WaP") {
-        baseTokenUri = "C:/Users/lwikberg/Documents/dev/Egna projekt/NFTs/Metadata/";
+        baseTokenUri = "../metadata/";
     }
 
     function getSenderTest() public view returns (uint256) {

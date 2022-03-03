@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import SimpleStorageContract from "./contracts/SimpleStorage.json";
-import MintPunkContract from "./contracts/MintPunks.json";
-import getWeb3 from "./getWeb3";
-import "./App.css";
+import SimpleStorageContract from "../../contracts/SimpleStorage.json";
+import MintPunkContract from "../../contracts/MintPunks.json";
+import getWeb3 from "../../helpers/getWeb3";
 
-function App() {
+import "./Mint.css";
+
+export default function Mint() {
   const [storageValue, setStorageValue] = useState(0);
   const [web3, setWeb3] = useState(null);
   const [accounts, setAccounts] = useState(null);
@@ -95,7 +96,7 @@ function App() {
       {
         !web3
           ? <div>Loading Web3, accounts, and contract...</div>
-          : <div className="App">
+          : <div className="Mint">
             {/* <input placeholder="Skriv ett nummer och klicka enter" onKeyDown={async (e) => await changeContractValue(e)} /> */}
             <input placeholder="Antal punks?" onKeyDown={async (e) => await mintTest(e)} />
             <button onClick={() => updatefan()}>update</button>
@@ -110,5 +111,3 @@ function App() {
     </>
   );
 }
-
-export default App;
