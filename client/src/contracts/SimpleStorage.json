@@ -25,12 +25,19 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
+<<<<<<< HEAD
   "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"x\",\"type\":\"uint256\"}],\"name\":\"set\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/SimpleStorage.sol\":\"SimpleStorage\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/SimpleStorage.sol\":{\"keccak256\":\"0xf927ae80ed2e216c31d7d8814bc84dd69bc93e59bf3dca108092a747f55e8933\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8533f1dadc25b2249b0c81fcdf712263fcc041aefc3cced3db2883c662460399\",\"dweb:/ipfs/QmabP4L1yGUUZRqXR7t9W66SKyR5oaAjnCi5oGpdnJd9Vk\"]}},\"version\":1}",
   "bytecode": "0x608060405234801561001057600080fd5b50610150806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806360fe47b11461003b5780636d4ce63c14610057575b600080fd5b610055600480360381019061005091906100c3565b610075565b005b61005f61007f565b60405161006c91906100ff565b60405180910390f35b8060008190555050565b60008054905090565b600080fd5b6000819050919050565b6100a08161008d565b81146100ab57600080fd5b50565b6000813590506100bd81610097565b92915050565b6000602082840312156100d9576100d8610088565b5b60006100e7848285016100ae565b91505092915050565b6100f98161008d565b82525050565b600060208201905061011460008301846100f0565b9291505056fea2646970667358221220b3bdc1f8936c5189aa18d75ff24411cde0cd8de71b8151077a081e69de2f3d7764736f6c634300080b0033",
   "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c806360fe47b11461003b5780636d4ce63c14610057575b600080fd5b610055600480360381019061005091906100c3565b610075565b005b61005f61007f565b60405161006c91906100ff565b60405180910390f35b8060008190555050565b60008054905090565b600080fd5b6000819050919050565b6100a08161008d565b81146100ab57600080fd5b50565b6000813590506100bd81610097565b92915050565b6000602082840312156100d9576100d8610088565b5b60006100e7848285016100ae565b91505092915050565b6100f98161008d565b82525050565b600060208201905061011460008301846100f0565b9291505056fea2646970667358221220b3bdc1f8936c5189aa18d75ff24411cde0cd8de71b8151077a081e69de2f3d7764736f6c634300080b0033",
+=======
+  "metadata": "{\"compiler\":{\"version\":\"0.8.12+commit.f00d7308\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"x\",\"type\":\"uint256\"}],\"name\":\"set\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/SimpleStorage.sol\":\"SimpleStorage\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/SimpleStorage.sol\":{\"keccak256\":\"0xf927ae80ed2e216c31d7d8814bc84dd69bc93e59bf3dca108092a747f55e8933\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8533f1dadc25b2249b0c81fcdf712263fcc041aefc3cced3db2883c662460399\",\"dweb:/ipfs/QmabP4L1yGUUZRqXR7t9W66SKyR5oaAjnCi5oGpdnJd9Vk\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610150806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806360fe47b11461003b5780636d4ce63c14610057575b600080fd5b610055600480360381019061005091906100c3565b610075565b005b61005f61007f565b60405161006c91906100ff565b60405180910390f35b8060008190555050565b60008054905090565b600080fd5b6000819050919050565b6100a08161008d565b81146100ab57600080fd5b50565b6000813590506100bd81610097565b92915050565b6000602082840312156100d9576100d8610088565b5b60006100e7848285016100ae565b91505092915050565b6100f98161008d565b82525050565b600060208201905061011460008301846100f0565b9291505056fea2646970667358221220e7c1593626ffe8433628ab63c8e6028695b3d6e8f11a87622449479aee9fc34f64736f6c634300080c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c806360fe47b11461003b5780636d4ce63c14610057575b600080fd5b610055600480360381019061005091906100c3565b610075565b005b61005f61007f565b60405161006c91906100ff565b60405180910390f35b8060008190555050565b60008054905090565b600080fd5b6000819050919050565b6100a08161008d565b81146100ab57600080fd5b50565b6000813590506100bd81610097565b92915050565b6000602082840312156100d9576100d8610088565b5b60006100e7848285016100ae565b91505092915050565b6100f98161008d565b82525050565b600060208201905061011460008301846100f0565b9291505056fea2646970667358221220e7c1593626ffe8433628ab63c8e6028695b3d6e8f11a87622449479aee9fc34f64736f6c634300080c0033",
+>>>>>>> Till-Pascal
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [
@@ -747,15 +754,26 @@
     "absolutePath": "project:/contracts/SimpleStorage.sol",
     "exportedSymbols": {
       "SimpleStorage": [
+<<<<<<< HEAD
         1892
       ]
     },
     "id": 1893,
+=======
+        2317
+      ]
+    },
+    "id": 2318,
+>>>>>>> Till-Pascal
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
+<<<<<<< HEAD
         "id": 1871,
+=======
+        "id": 2296,
+>>>>>>> Till-Pascal
         "literals": [
           "solidity",
           ">=",
@@ -775,9 +793,15 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
+<<<<<<< HEAD
         "id": 1892,
         "linearizedBaseContracts": [
           1892
+=======
+        "id": 2317,
+        "linearizedBaseContracts": [
+          2317
+>>>>>>> Till-Pascal
         ],
         "name": "SimpleStorage",
         "nameLocation": "79:13:12",
@@ -785,12 +809,20 @@
         "nodes": [
           {
             "constant": false,
+<<<<<<< HEAD
             "id": 1873,
+=======
+            "id": 2298,
+>>>>>>> Till-Pascal
             "mutability": "mutable",
             "name": "storedData",
             "nameLocation": "103:10:12",
             "nodeType": "VariableDeclaration",
+<<<<<<< HEAD
             "scope": 1892,
+=======
+            "scope": 2317,
+>>>>>>> Till-Pascal
             "src": "98:15:12",
             "stateVariable": true,
             "storageLocation": "default",
@@ -799,7 +831,11 @@
               "typeString": "uint256"
             },
             "typeName": {
+<<<<<<< HEAD
               "id": 1872,
+=======
+              "id": 2297,
+>>>>>>> Till-Pascal
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "98:4:12",
@@ -812,23 +848,39 @@
           },
           {
             "body": {
+<<<<<<< HEAD
               "id": 1882,
+=======
+              "id": 2307,
+>>>>>>> Till-Pascal
               "nodeType": "Block",
               "src": "148:27:12",
               "statements": [
                 {
                   "expression": {
+<<<<<<< HEAD
                     "id": 1880,
+=======
+                    "id": 2305,
+>>>>>>> Till-Pascal
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
+<<<<<<< HEAD
                       "id": 1878,
                       "name": "storedData",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1873,
+=======
+                      "id": 2303,
+                      "name": "storedData",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2298,
+>>>>>>> Till-Pascal
                       "src": "155:10:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -838,11 +890,19 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
+<<<<<<< HEAD
                       "id": 1879,
                       "name": "x",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1875,
+=======
+                      "id": 2304,
+                      "name": "x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2300,
+>>>>>>> Till-Pascal
                       "src": "168:1:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -855,14 +915,22 @@
                       "typeString": "uint256"
                     }
                   },
+<<<<<<< HEAD
                   "id": 1881,
+=======
+                  "id": 2306,
+>>>>>>> Till-Pascal
                   "nodeType": "ExpressionStatement",
                   "src": "155:14:12"
                 }
               ]
             },
             "functionSelector": "60fe47b1",
+<<<<<<< HEAD
             "id": 1883,
+=======
+            "id": 2308,
+>>>>>>> Till-Pascal
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -870,17 +938,29 @@
             "nameLocation": "129:3:12",
             "nodeType": "FunctionDefinition",
             "parameters": {
+<<<<<<< HEAD
               "id": 1876,
+=======
+              "id": 2301,
+>>>>>>> Till-Pascal
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
+<<<<<<< HEAD
                   "id": 1875,
+=======
+                  "id": 2300,
+>>>>>>> Till-Pascal
                   "mutability": "mutable",
                   "name": "x",
                   "nameLocation": "138:1:12",
                   "nodeType": "VariableDeclaration",
+<<<<<<< HEAD
                   "scope": 1883,
+=======
+                  "scope": 2308,
+>>>>>>> Till-Pascal
                   "src": "133:6:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -889,7 +969,11 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
+<<<<<<< HEAD
                     "id": 1874,
+=======
+                    "id": 2299,
+>>>>>>> Till-Pascal
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "133:4:12",
@@ -904,12 +988,20 @@
               "src": "132:8:12"
             },
             "returnParameters": {
+<<<<<<< HEAD
               "id": 1877,
+=======
+              "id": 2302,
+>>>>>>> Till-Pascal
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "148:0:12"
             },
+<<<<<<< HEAD
             "scope": 1892,
+=======
+            "scope": 2317,
+>>>>>>> Till-Pascal
             "src": "120:55:12",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -917,32 +1009,53 @@
           },
           {
             "body": {
+<<<<<<< HEAD
               "id": 1890,
+=======
+              "id": 2315,
+>>>>>>> Till-Pascal
               "nodeType": "Block",
               "src": "223:30:12",
               "statements": [
                 {
                   "expression": {
+<<<<<<< HEAD
                     "id": 1888,
                     "name": "storedData",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 1873,
+=======
+                    "id": 2313,
+                    "name": "storedData",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2298,
+>>>>>>> Till-Pascal
                     "src": "237:10:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
+<<<<<<< HEAD
                   "functionReturnParameters": 1887,
                   "id": 1889,
+=======
+                  "functionReturnParameters": 2312,
+                  "id": 2314,
+>>>>>>> Till-Pascal
                   "nodeType": "Return",
                   "src": "230:17:12"
                 }
               ]
             },
             "functionSelector": "6d4ce63c",
+<<<<<<< HEAD
             "id": 1891,
+=======
+            "id": 2316,
+>>>>>>> Till-Pascal
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -950,23 +1063,39 @@
             "nameLocation": "190:3:12",
             "nodeType": "FunctionDefinition",
             "parameters": {
+<<<<<<< HEAD
               "id": 1884,
+=======
+              "id": 2309,
+>>>>>>> Till-Pascal
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "193:2:12"
             },
             "returnParameters": {
+<<<<<<< HEAD
               "id": 1887,
+=======
+              "id": 2312,
+>>>>>>> Till-Pascal
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
+<<<<<<< HEAD
                   "id": 1886,
+=======
+                  "id": 2311,
+>>>>>>> Till-Pascal
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
+<<<<<<< HEAD
                   "scope": 1891,
+=======
+                  "scope": 2316,
+>>>>>>> Till-Pascal
                   "src": "217:4:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -975,7 +1104,11 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
+<<<<<<< HEAD
                     "id": 1885,
+=======
+                    "id": 2310,
+>>>>>>> Till-Pascal
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "217:4:12",
@@ -989,14 +1122,22 @@
               ],
               "src": "216:6:12"
             },
+<<<<<<< HEAD
             "scope": 1892,
+=======
+            "scope": 2317,
+>>>>>>> Till-Pascal
             "src": "181:72:12",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           }
         ],
+<<<<<<< HEAD
         "scope": 1893,
+=======
+        "scope": 2318,
+>>>>>>> Till-Pascal
         "src": "70:186:12",
         "usedErrors": []
       }
@@ -1007,15 +1148,26 @@
     "absolutePath": "project:/contracts/SimpleStorage.sol",
     "exportedSymbols": {
       "SimpleStorage": [
+<<<<<<< HEAD
         1892
       ]
     },
     "id": 1893,
+=======
+        2317
+      ]
+    },
+    "id": 2318,
+>>>>>>> Till-Pascal
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
+<<<<<<< HEAD
         "id": 1871,
+=======
+        "id": 2296,
+>>>>>>> Till-Pascal
         "literals": [
           "solidity",
           ">=",
@@ -1035,9 +1187,15 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
+<<<<<<< HEAD
         "id": 1892,
         "linearizedBaseContracts": [
           1892
+=======
+        "id": 2317,
+        "linearizedBaseContracts": [
+          2317
+>>>>>>> Till-Pascal
         ],
         "name": "SimpleStorage",
         "nameLocation": "79:13:12",
@@ -1045,12 +1203,20 @@
         "nodes": [
           {
             "constant": false,
+<<<<<<< HEAD
             "id": 1873,
+=======
+            "id": 2298,
+>>>>>>> Till-Pascal
             "mutability": "mutable",
             "name": "storedData",
             "nameLocation": "103:10:12",
             "nodeType": "VariableDeclaration",
+<<<<<<< HEAD
             "scope": 1892,
+=======
+            "scope": 2317,
+>>>>>>> Till-Pascal
             "src": "98:15:12",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1059,7 +1225,11 @@
               "typeString": "uint256"
             },
             "typeName": {
+<<<<<<< HEAD
               "id": 1872,
+=======
+              "id": 2297,
+>>>>>>> Till-Pascal
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "98:4:12",
@@ -1072,23 +1242,39 @@
           },
           {
             "body": {
+<<<<<<< HEAD
               "id": 1882,
+=======
+              "id": 2307,
+>>>>>>> Till-Pascal
               "nodeType": "Block",
               "src": "148:27:12",
               "statements": [
                 {
                   "expression": {
+<<<<<<< HEAD
                     "id": 1880,
+=======
+                    "id": 2305,
+>>>>>>> Till-Pascal
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
+<<<<<<< HEAD
                       "id": 1878,
                       "name": "storedData",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1873,
+=======
+                      "id": 2303,
+                      "name": "storedData",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2298,
+>>>>>>> Till-Pascal
                       "src": "155:10:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1098,11 +1284,19 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
+<<<<<<< HEAD
                       "id": 1879,
                       "name": "x",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 1875,
+=======
+                      "id": 2304,
+                      "name": "x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2300,
+>>>>>>> Till-Pascal
                       "src": "168:1:12",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1115,14 +1309,22 @@
                       "typeString": "uint256"
                     }
                   },
+<<<<<<< HEAD
                   "id": 1881,
+=======
+                  "id": 2306,
+>>>>>>> Till-Pascal
                   "nodeType": "ExpressionStatement",
                   "src": "155:14:12"
                 }
               ]
             },
             "functionSelector": "60fe47b1",
+<<<<<<< HEAD
             "id": 1883,
+=======
+            "id": 2308,
+>>>>>>> Till-Pascal
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -1130,17 +1332,29 @@
             "nameLocation": "129:3:12",
             "nodeType": "FunctionDefinition",
             "parameters": {
+<<<<<<< HEAD
               "id": 1876,
+=======
+              "id": 2301,
+>>>>>>> Till-Pascal
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
+<<<<<<< HEAD
                   "id": 1875,
+=======
+                  "id": 2300,
+>>>>>>> Till-Pascal
                   "mutability": "mutable",
                   "name": "x",
                   "nameLocation": "138:1:12",
                   "nodeType": "VariableDeclaration",
+<<<<<<< HEAD
                   "scope": 1883,
+=======
+                  "scope": 2308,
+>>>>>>> Till-Pascal
                   "src": "133:6:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1149,7 +1363,11 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
+<<<<<<< HEAD
                     "id": 1874,
+=======
+                    "id": 2299,
+>>>>>>> Till-Pascal
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "133:4:12",
@@ -1164,12 +1382,20 @@
               "src": "132:8:12"
             },
             "returnParameters": {
+<<<<<<< HEAD
               "id": 1877,
+=======
+              "id": 2302,
+>>>>>>> Till-Pascal
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "148:0:12"
             },
+<<<<<<< HEAD
             "scope": 1892,
+=======
+            "scope": 2317,
+>>>>>>> Till-Pascal
             "src": "120:55:12",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -1177,32 +1403,53 @@
           },
           {
             "body": {
+<<<<<<< HEAD
               "id": 1890,
+=======
+              "id": 2315,
+>>>>>>> Till-Pascal
               "nodeType": "Block",
               "src": "223:30:12",
               "statements": [
                 {
                   "expression": {
+<<<<<<< HEAD
                     "id": 1888,
                     "name": "storedData",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 1873,
+=======
+                    "id": 2313,
+                    "name": "storedData",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2298,
+>>>>>>> Till-Pascal
                     "src": "237:10:12",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
+<<<<<<< HEAD
                   "functionReturnParameters": 1887,
                   "id": 1889,
+=======
+                  "functionReturnParameters": 2312,
+                  "id": 2314,
+>>>>>>> Till-Pascal
                   "nodeType": "Return",
                   "src": "230:17:12"
                 }
               ]
             },
             "functionSelector": "6d4ce63c",
+<<<<<<< HEAD
             "id": 1891,
+=======
+            "id": 2316,
+>>>>>>> Till-Pascal
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -1210,23 +1457,39 @@
             "nameLocation": "190:3:12",
             "nodeType": "FunctionDefinition",
             "parameters": {
+<<<<<<< HEAD
               "id": 1884,
+=======
+              "id": 2309,
+>>>>>>> Till-Pascal
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "193:2:12"
             },
             "returnParameters": {
+<<<<<<< HEAD
               "id": 1887,
+=======
+              "id": 2312,
+>>>>>>> Till-Pascal
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
+<<<<<<< HEAD
                   "id": 1886,
+=======
+                  "id": 2311,
+>>>>>>> Till-Pascal
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
+<<<<<<< HEAD
                   "scope": 1891,
+=======
+                  "scope": 2316,
+>>>>>>> Till-Pascal
                   "src": "217:4:12",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1235,7 +1498,11 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
+<<<<<<< HEAD
                     "id": 1885,
+=======
+                    "id": 2310,
+>>>>>>> Till-Pascal
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "217:4:12",
@@ -1249,14 +1516,22 @@
               ],
               "src": "216:6:12"
             },
+<<<<<<< HEAD
             "scope": 1892,
+=======
+            "scope": 2317,
+>>>>>>> Till-Pascal
             "src": "181:72:12",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           }
         ],
+<<<<<<< HEAD
         "scope": 1893,
+=======
+        "scope": 2318,
+>>>>>>> Till-Pascal
         "src": "70:186:12",
         "usedErrors": []
       }
@@ -1265,18 +1540,27 @@
   },
   "compiler": {
     "name": "solc",
+<<<<<<< HEAD
     "version": "0.8.11+commit.d7f03943.Emscripten.clang"
+=======
+    "version": "0.8.12+commit.f00d7308.Emscripten.clang"
+>>>>>>> Till-Pascal
   },
   "networks": {
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x16611801B3Da3d20283aE21966B60B45f161FB5e",
-      "transactionHash": "0x44c841742a3af3319049708003070b13503fe94375dbc3d88b4d8eb44eed5f52"
+      "address": "0x354ce0b8E3f29644d52D73cc29bd86AD57c399bB",
+      "transactionHash": "0x2f37b28336ba22afd41675e547857b005bc8fbbe9787ca7f723cb8cf2debdc9c"
     }
   },
   "schemaVersion": "3.4.4",
+<<<<<<< HEAD
   "updatedAt": "2022-02-10T20:00:44.740Z",
+=======
+  "updatedAt": "2022-03-03T08:33:56.520Z",
+  "networkType": "ethereum",
+>>>>>>> Till-Pascal
   "devdoc": {
     "kind": "dev",
     "methods": {},
