@@ -9,7 +9,7 @@ import {
 import Mint from "./Mint/Mint";
 import Start from "./Start/Start";
 import Builder from "./Builder/Builder";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 
 export default function App() {
