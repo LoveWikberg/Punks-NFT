@@ -46,6 +46,10 @@
               "target": "Package",
               "version": "[1.11.1, )"
             },
+            "Nethereum": {
+              "target": "Package",
+              "version": "[0.95.0--date20210125-0551.git-05a29e9, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
