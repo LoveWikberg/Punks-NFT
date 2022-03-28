@@ -12,6 +12,8 @@ function App() {
   const [mintPrice, setMintPrice] = useState();
   const [mintAmount, setMintAmount] = useState(0);
   const [releaseAddress, setReleaseAddress] = useState();
+  const [tokenIdToFetch, setTokenIdToFetch] = useState();
+  const [newTokenURI, setNewTokenURI] = useState();
 
   useEffect(() => {
     const initiate = async () => {
@@ -53,10 +55,6 @@ function App() {
   }
 
   const mint = async () => {
-    console.log(mintPrice * mintAmount);
-    console.log(mintPrice);
-    console.log(mintAmount);
-
     await mintContract.methods.presaleMint(mintAmount)
       .send({ from: accounts[0], value: mintPrice * mintAmount });
   }
@@ -82,6 +80,15 @@ function App() {
     console.log(response);
   }
 
+  const getTokenURIData = async () => {
+    const response = await mintContract.methods.tokenURIData(tokenIdToFetch).call();
+    console.log(response);
+  }
+
+  const changeBaseTokenURI = async () => {
+    await mintContract.methods.changeBaseTokenURI(newTokenURI).send({ from: accounts[0] });
+  }
+
   return (
     <>
       {
@@ -97,6 +104,14 @@ function App() {
               <Input placeholder="Address to release to" onChange={e => setReleaseAddress(e.target.value)} />
               <Button onClick={async () => await releaseShares()}>Release shares</Button>
               <Button onClick={async () => await getReleasedSharesTo()}>Get released shares</Button>
+            </InputGroup>
+            <InputGroup>
+              <Input type="number" placeholder="Token id" onChange={e => setTokenIdToFetch(parseInt(e.target.value))} />
+              <Button onClick={async () => await getTokenURIData()}>Get token URI</Button>
+            </InputGroup>
+            <InputGroup>
+              <Input placeholder="Token URI" onChange={e => setNewTokenURI(e.target.value)} />
+              <Button onClick={async () => await changeBaseTokenURI()}>Change base token URI</Button>
             </InputGroup>
             <Button onClick={async () => await getTotalShares()}>Get total shares</Button>
             <Button onClick={async () => await getReleasedShares()}>Total released</Button>

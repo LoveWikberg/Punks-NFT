@@ -96,4 +96,21 @@ contract MintPunks is ERC721A, PaymentSplitter {
     function _baseURI() internal view virtual override returns (string memory) {
         return baseTokenUri;
     }
+
+    function changeBaseTokenURI(string memory newURI) public {
+        baseTokenUri = newURI;
+    }
+
+    modifier isTokenOwner(uint256 tokenId) {
+        address tokenAddress = ownerOf(tokenId);
+        require(
+            tokenAddress == msg.sender,
+            "Method can only be called by the ownder of this token"
+        );
+        _;
+    }
+
+    function changeTokenURI(uint256 tokenId, string memory tokenAddress) public {
+        _setTokenURI(tokenId, tokenAddress);
+    }
 }
