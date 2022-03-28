@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\paandersson\\Documents\\Dev\\punks\\PunksMultiverseApi\\PunksMultiverseApi\\PunksMultiverseApi.csproj": {}
+    "C:\\Users\\lwikberg\\Documents\\dev\\Egna projekt\\Punks\\PunksMultiverseApi\\PunksMultiverseApi\\PunksMultiverseApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\paandersson\\Documents\\Dev\\punks\\PunksMultiverseApi\\PunksMultiverseApi\\PunksMultiverseApi.csproj": {
+    "C:\\Users\\lwikberg\\Documents\\dev\\Egna projekt\\Punks\\PunksMultiverseApi\\PunksMultiverseApi\\PunksMultiverseApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\paandersson\\Documents\\Dev\\punks\\PunksMultiverseApi\\PunksMultiverseApi\\PunksMultiverseApi.csproj",
+        "projectUniqueName": "C:\\Users\\lwikberg\\Documents\\dev\\Egna projekt\\Punks\\PunksMultiverseApi\\PunksMultiverseApi\\PunksMultiverseApi.csproj",
         "projectName": "PunksMultiverseApi",
-        "projectPath": "C:\\Users\\paandersson\\Documents\\Dev\\punks\\PunksMultiverseApi\\PunksMultiverseApi\\PunksMultiverseApi.csproj",
-        "packagesPath": "C:\\Users\\paandersson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\paandersson\\Documents\\Dev\\punks\\PunksMultiverseApi\\PunksMultiverseApi\\obj\\",
+        "projectPath": "C:\\Users\\lwikberg\\Documents\\dev\\Egna projekt\\Punks\\PunksMultiverseApi\\PunksMultiverseApi\\PunksMultiverseApi.csproj",
+        "packagesPath": "C:\\Users\\lwikberg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lwikberg\\Documents\\dev\\Egna projekt\\Punks\\PunksMultiverseApi\\PunksMultiverseApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\paandersson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lwikberg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://nuget.systest.mrm.sverigesingenjorer.se/nuget/": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.optimizely.com/feed/packages.svc/": {}
         },
@@ -65,12 +68,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.13, 5.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -79,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

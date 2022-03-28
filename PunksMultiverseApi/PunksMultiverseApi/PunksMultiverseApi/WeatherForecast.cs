@@ -1,6 +1,6 @@
 using System;
 
-namespace PunksMultiverseApi.Models
+namespace PunksMultiverseApi
 {
     public class WeatherForecast
     {
