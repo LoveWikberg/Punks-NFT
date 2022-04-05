@@ -9,13 +9,13 @@ contract MintPunks is ERC721A, PaymentSplitter {
     using SafeMath for uint256;
 
     address[] private PAY_LIST = [
-        0xEAE1b5133f97fbbe0ab8b7578907d395d41ab46b,
-        0xf7B8dDeCdf914CfE5A62968A357Dc609DAd08E19,
-        0xb0C34A989f774f641E2C7672Da85B2B79285dF4f
+        0xAE7B0aF0540B8132583d5d089794b37d131ab7ef,
+        0x72ebe2a01756f1A3dA2073c97B110CC82A387a65,
+        0x44e555546fFA4e3e5718C74BDe9Da88fF6dA0d52
     ];
     uint256[] private PAY_SHARES = [50, 25, 25];
     uint256 public constant TOKEN_PRICE = 0.1 ether;
-    uint128 public constant MAX_SUPPLY = 6969;
+    uint128 public constant MAX_SUPPLY = 10000;
     uint128 public constant MAX_PURCHASE = 20;
     string private baseTokenUri;
 
@@ -24,31 +24,15 @@ contract MintPunks is ERC721A, PaymentSplitter {
         ERC721A("Wagmi Punks", "WaP")
         PaymentSplitter(PAY_LIST, PAY_SHARES)
     {
-        baseTokenUri = "http://127.0.0.1:8887/";
+        baseTokenUri = "http://127.0.0.1:10000/devstoreaccount1/wagmi-punks/nft/punk/json/";
     }
 
-    function getSenderTest() public view returns (uint256) {
-        return balanceOf(msg.sender);
-    }
-
-    function presaleMint(uint256 numberOfTokens)
-        public
-        payable
-        returns (uint256)
-    {
+    function presaleMint(uint256 numberOfTokens) public payable {
         uint256 totalCost = TOKEN_PRICE.mul(numberOfTokens);
-        // require(totalCost <= msg.value, "Ether value sent is too low");
+        // require(totalCost < msg.value, "Ether value sent is too low");
+        // require(totalCost > msg.value, "Ether value sent is too high");
+
         _safeMint(msg.sender, numberOfTokens);
-
-        return msg.value;
-    }
-
-    function totalSupp() public view returns (uint256) {
-        return totalSupply();
-    }
-
-    function tokenURIData(uint256 tokenId) public view returns (string memory) {
-        return tokenURI(tokenId);
     }
 
     function getTotalShares() public view returns (uint256) {
@@ -93,6 +77,10 @@ contract MintPunks is ERC721A, PaymentSplitter {
         }
     }
 
+    function getBaseURI() public view returns (string memory) {
+        return baseTokenUri;
+    }
+
     function _baseURI() internal view virtual override returns (string memory) {
         return baseTokenUri;
     }
@@ -108,9 +96,5 @@ contract MintPunks is ERC721A, PaymentSplitter {
             "Method can only be called by the ownder of this token"
         );
         _;
-    }
-
-    function changeTokenURI(uint256 tokenId, string memory tokenAddress) public {
-        _setTokenURI(tokenId, tokenAddress);
     }
 }

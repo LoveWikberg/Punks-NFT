@@ -2,4 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/client/node_modules
+/clientapp/client/src/contracts
+/PunksMultiverseApi/PunksMultiverseApi/PunksMultiverseApi/bin/Debug/net5.0
+/PunksMultiverseApi/PunksMultiverseApi/PunksMultiverseApi/bin/Debug/net5.0
+/PunksMultiverseApi/PunksMultiverseApi/PunksMultiverseApi/obj/

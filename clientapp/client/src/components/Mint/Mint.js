@@ -8,7 +8,6 @@ function App() {
   const [accounts, setAccounts] = useState(null);
   const [mintContract, setMintContract] = useState(null);
   const [ownedTokes, setOwnedTokes] = useState([]);
-  const [amountTokes, setAmountTokes] = useState();
   const [mintPrice, setMintPrice] = useState();
   const [mintAmount, setMintAmount] = useState(0);
   const [releaseAddress, setReleaseAddress] = useState();
@@ -36,12 +35,10 @@ function App() {
       );
 
       const tokens = await instance2.methods.tokensOfOwner().call({ from: accounts[0] });
-      const amountok = await instance2.methods.totalSupp().call({ from: accounts[0] });
       const price = await instance2.methods.TOKEN_PRICE().call();
 
       setMintPrice(price);
       setOwnedTokes(tokens);
-      setAmountTokes(amountok);
       setWeb3(web3);
       setAccounts(accounts);
       setMintContract(instance2);
@@ -89,6 +86,15 @@ function App() {
     await mintContract.methods.changeBaseTokenURI(newTokenURI).send({ from: accounts[0] });
   }
 
+  const getNfts = () => {
+    fetch("https://localhost:44393/customization/punks",
+      {
+        method: "GET"
+      })
+      .then(response => response.json())
+      .then(data => console.log(data));
+  }
+
   return (
     <>
       {
@@ -115,12 +121,17 @@ function App() {
             </InputGroup>
             <Button onClick={async () => await getTotalShares()}>Get total shares</Button>
             <Button onClick={async () => await getReleasedShares()}>Total released</Button>
-            <h1>{amountTokes}</h1>
+            <Button onClick={() => getNfts()}>Get NFTs</Button>
+            <p>Price: {mintPrice}</p>
             {
               ownedTokes.map((token, key) =>
-                <h1 key={key}>{token}</h1>
+                <>
+                  <h1 key={key}>{token}</h1>
+                  <img src={`http://127.0.0.1:10000/devstoreaccount1/wagmi-punks/nft/punk/images/${token}.png`}/>
+                </>
               )
             }
+
           </Container >
       }
     </>
