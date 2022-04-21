@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
     BrowserRouter as Router,
     Switch,
@@ -8,13 +8,18 @@ import {
 
 import Mint from "./Mint/Mint";
 import Start from "./Start/Start";
-import { Skins } from "./Skins/Skins";
+import { SkinsGallery } from "./Skins/SkinsGallery";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./App.css";
+import "./App.scss";
+import { setGlobalState } from '../states';
+import { getMockBasePunk } from '../helpers/apiHelper';
+
 
 export default function App() {
+    setGlobalState("selectedPunk", getMockBasePunk());
+
     return (
-        <>
+        <div className="main">
             <Router>
                 <div>
                     <ul>
@@ -29,9 +34,10 @@ export default function App() {
                         </li>
                     </ul>
 
+
                     <Switch>
                         <Route path="/skins">
-                            <Skins />
+                            <SkinsGallery />
                         </Route>
                         <Route path="/mint">
                             <Mint />
@@ -42,6 +48,6 @@ export default function App() {
                     </Switch>
                 </div>
             </Router>
-        </>
+        </div>
     );
 }

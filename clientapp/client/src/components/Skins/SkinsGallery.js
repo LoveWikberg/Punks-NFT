@@ -1,37 +1,29 @@
 import './Skins.scss';
 import Punk from '../Punk/Punk';
-import { apiHelper, getMockBasePunk, getMockSkins } from '../../helpers/apiHelper';
-
+import { getMockSkins } from '../../helpers/apiHelper';
 import React, { useEffect, useState } from "react";
+import { useGlobalState } from '../../states';
+import { Skin } from './Skin';
 
-export const Skins = () => {
-  const [basePunk, setBasePunk] = useState(null);
+export const SkinsGallery = () => {
   const [skins, setSkins] = useState([]);
+  const [basePunk] = useGlobalState("selectedPunk");
 
   useEffect(() => {
     const initiate = async () => {
+      
       await initStates();
     }
-
     initiate();
   }, [])
 
   const initStates = async () => {
-    let basePunk = getMockBasePunk();
-    let skins = getMockSkins();
-    setBasePunk(basePunk);
-    setSkins(skins);
+    setSkins(getMockSkins());
   }
 
   return (
     <>
-    {
-      !basePunk ? 
-      <p>Fetching punk</p>
-      : 
-      <Punk skin={basePunk} />
-    }
-
+    <h1>Your skins</h1>
       {
         !skins ?
           <p>Fetching skins...</p>
@@ -39,7 +31,7 @@ export const Skins = () => {
           <div className='skins__wrapper'>
             {
               skins.map((item, key) =>
-                <Punk skin={item} key={key} />
+                <Skin skin={item} key={key} />
               )
             }
           </div>

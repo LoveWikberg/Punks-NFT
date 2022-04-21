@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(64, 64, 64, 1) 93%);
+  color: white;
+  width: 100%;
+
+  a {
+    color: white !important;
+  }
+}
+
+.main {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 10px 20px;
+
+  &--primary {
+    background: #fff;
+    color: #000;
+    border: solid 2px transparent;
+    border-radius: 5px;
+
+    &:hover {
+      background: transparent;
+      color: #fff;
+      border-color: #fff;
+    }
+  }
+}
