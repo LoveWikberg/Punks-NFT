@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+
 
 export default function Start() {
-    return (
-      <>
-        <p>Welcome to Wagmi Punks</p>
-      </>
-    );
-  }
+
+  return (
+    <>
+      <p>Welcome to Wagmi Punks</p>
+    </>
+  );
+}
