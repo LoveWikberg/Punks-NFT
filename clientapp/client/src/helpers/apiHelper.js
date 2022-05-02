@@ -22,6 +22,12 @@ export const getMockBasePunk = () => {
     return basePunk;
 }
 
+export const getMockBasePunkImage = () => {
+    const imageBaseUri = '/testfiles/testbasepunk.png';
+
+    return imageBaseUri;
+}
+
 export const getMockSkins = () => {
     const imageBaseUri = '/testfiles';
 
@@ -54,32 +60,32 @@ export const getMockSkins = () => {
         {
             name: 'Wage Punks',
             description: 'Get back to work!',
-            image: null,
+            image: '/testfiles/testbasepunk.PNG',
         },
         {
             name: 'Nostagia Punks',
             description: 'It was better before...',
-            image: null,
+            image: '/testfiles/testbasepunk.PNG',
         },
         {
             name: 'Project#3',
             description: 'Lorem ipsum dolor sit amet...',
-            image: null,
+            image: '/testfiles/testbasepunk.PNG',
         },
         {
             name: 'Project#4',
             description: 'Lorem ipsum dolor sit amet...',
-            image: null,
+            image: '/testfiles/testbasepunk.PNG',
         }, 
         {
             name: 'Project#5',
             description: 'Lorem ipsum dolor sit amet...',
-            image: null,
+            image: '/testfiles/testbasepunk.PNG',
         },
         {
             name: 'Project#6',
             description: 'Lorem ipsum dolor sit amet...',
-            image: null,
+            image: '/testfiles/testbasepunk.PNG',
         },
     ]
 

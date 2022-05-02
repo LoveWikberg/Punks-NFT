@@ -12,11 +12,11 @@ import { SkinsGallery } from "./Skins/SkinsGallery";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.scss";
 import { setGlobalState } from '../states';
-import { getMockBasePunk } from '../helpers/apiHelper';
+import { getMockBasePunk, getMockBasePunkImage } from '../helpers/apiHelper';
 
 
 export default function App() {
-    setGlobalState("selectedPunk", getMockBasePunk());
+    setGlobalState("selectedPunk", getMockBasePunkImage());
 
     return (
         <div className="main">

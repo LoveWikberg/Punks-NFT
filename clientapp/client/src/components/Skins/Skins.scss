@@ -3,13 +3,13 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        justify-content: space-between;
     }
 
     &__item {
         display: block;
-        width: 20%;
-        margin: 10px 10px 0;
-        
+        width: 30%;
+        margin: 20px 0;
         
         &--header {
             font-size: 20px;

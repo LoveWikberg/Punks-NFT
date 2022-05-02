@@ -4,6 +4,7 @@ import { getMockSkins } from '../../helpers/apiHelper';
 import React, { useEffect, useState } from "react";
 import { useGlobalState } from '../../states';
 import { Skin } from './Skin';
+import { PunkMenu } from '../PunkMenu/PunkMenu';
 
 export const SkinsGallery = () => {
   const [skins, setSkins] = useState([]);
@@ -23,19 +24,8 @@ export const SkinsGallery = () => {
 
   return (
     <>
-    <h1>Your skins</h1>
-      {
-        !skins ?
-          <p>Fetching skins...</p>
-          :
-          <div className='skins__wrapper'>
-            {
-              skins.map((item, key) =>
-                <Skin skin={item} key={key} />
-              )
-            }
-          </div>
-      }
+    <PunkMenu skins={skins} />
+    
     </>
   );
 }
